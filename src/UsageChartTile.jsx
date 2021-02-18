@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "@ui5/webcomponents-react";
-import { LineChart } from "@ui5/webcomponents-react-charts";
+import { LineChart, BarChart } from "@ui5/webcomponents-react-charts";
 import { appsData } from "./demo-utils";
 
 const CHART_LABELS = {

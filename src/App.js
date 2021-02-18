@@ -12,7 +12,7 @@ import { UsageChartTile } from "./UsageChartTile";
 import { TopAppsTile } from "./TopAppsTile";
 import { AllAppsTile } from "./AllAppsTile";
 
-// npm create react-app my-app --template @ui5/webcomponents-react
+// npx create react-app my-app --template @ui5/webcomponents-react
 
 function App() {
   return (
