@@ -1,29 +1,32 @@
 import {
   FlexBox,
   FlexBoxAlignItems,
-  FlexBoxDirection,
   FlexBoxJustifyContent,
-  Link,
-  LinkDesign,
+  FlexBoxWrap,
   ShellBar,
-  ThemeProvider
-} from '@ui5/webcomponents-react';
-import React from 'react';
-import './App.css';
+  ThemeProvider,
+} from "@ui5/webcomponents-react";
+import React from "react";
+import "./App.css";
+import { UsageChartTile } from "./UsageChartTile";
+import { TopAppsTile } from "./TopAppsTile";
+import { AllAppsTile } from "./AllAppsTile";
+
+// npm create react-app my-app --template @ui5/webcomponents-react
 
 function App() {
   return (
     <ThemeProvider>
-      <ShellBar primaryTitle="UI5 Web Components for React Template" />
+      <ShellBar primaryTitle="Demo UI5 Web Components for React" />
       <FlexBox
-        style={{ width: '100%', height: '100vh' }}
-        direction={FlexBoxDirection.Column}
         justifyContent={FlexBoxJustifyContent.Center}
         alignItems={FlexBoxAlignItems.Center}
+        wrap={FlexBoxWrap.Wrap}
+        style={{ padding: "1rem" }}
       >
-        <Link href="https://sap.github.io/ui5-webcomponents-react/" target="_blank" design={LinkDesign.Emphasized}>
-          Getting Started with UI5 Web Component for React
-        </Link>
+        <TopAppsTile />
+        <UsageChartTile />
+        <AllAppsTile />
       </FlexBox>
     </ThemeProvider>
   );
